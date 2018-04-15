@@ -13,8 +13,8 @@ public class TimeServer {
             } catch (NumberFormatException e) {
                 e.printStackTrace();
             }
-            MultiplexerTimeServer timeServer = new MultiplexerTimeServer(port);
-            new Thread(timeServer, "NIO-MultiplerTimeServer-001").start();
         }
+        MultiplexerTimeServer timeServer = new MultiplexerTimeServer(port);
+        new Thread(timeServer, "NIO-MultiplerTimeServer-001").start();
     }
 }
